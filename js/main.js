@@ -1,3 +1,5 @@
+
+// sticky header styling on scroll
 const primaryHeader = document.querySelector('.primary-header');
 const scrollWatcher = document.createElement('div');
 scrollWatcher.setAttribute('data-scroll-watcher', '');
@@ -10,14 +12,4 @@ const navObserver = new IntersectionObserver((entries) => {
 
 navObserver.observe(scrollWatcher)
 
-
-// $(function() {
-//     $(window).on("scroll", function() {
-//         if($(window).scrollTop() > 50) {
-//             $(".header").addClass("active");
-//         } else {
-//             //remove the background property so it comes transparent again (defined in your css)
-//            $(".header").removeClass("active");
-//         }
-//     });
-// });
+// 

@@ -157,22 +157,14 @@ nav > ul {
 
 .primary-header {
     position: sticky;
-      /* z-index: 1000; */
-      /* height: 100px; */
-    /* width: 100%;  */
-      background: rgba(34,34,34,0.25);
-      padding: 18px;
-      transition: all 0.2s ease-in-out;
+    line-height: 3em;
+    transition: all 0.2s ease-in-out;
 }
 
 .primary-header.sticking {
     background-color: white;
 
 }
-  
-/* .active {
-    background-color: white;
-} */
 
 /* ------------main------------------ */
 main {
@@ -181,7 +173,7 @@ main {
 }
 
 main > * {
-    border: 2px dotted black;
+    /* border: 2px dotted black; */
     padding: 2rem;
 }
 
