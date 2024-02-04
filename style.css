@@ -198,9 +198,7 @@ main > * {
 
 .hero {
     grid-column: 1 / 13;
-
     text-align: center;
-
 }
 
 .cards {
@@ -211,19 +209,19 @@ main > * {
     list-style-type: none;
 
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    
+    /* grid-template-columns: repeat(12, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-
 }
 
 .card {
-    grid-column: span 4;
-
+    /* grid-column: span 4; */
+    /* max-width: 150px; */
     padding: 1rem;
 
     border: 4px solid black;
     border-radius: 4px;
-
     box-shadow: -5px 5px black;
 
     background-color: var(--color-white);
@@ -235,7 +233,6 @@ main > * {
     top: -10px;
     left: 10px;
 
-    /* box-shadow: black; */
     box-shadow: -12px 12px 2px 1px rgba(0, 0, 255, .3);
 }
 
@@ -244,3 +241,17 @@ footer {
     grid-column: 1 / 13;
 }
 
+
+/* @media only screen and (max-width: 900px) {
+    .global-wrapper {
+        background-color: lightblue;
+    }
+
+    .wrapper {
+        max-width: 600px;
+        padding-inline: 1rem;
+    }
+    main > * {
+        padding-inline: 4rem;
+    }
+  } */

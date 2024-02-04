@@ -23,6 +23,10 @@ https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin
     - med size : aside + 2col cards
     - small size: aside shifts up + 1col cards
 
+    * could use grid-template-columns(auto-fit, minmax()),
+    but how will this behave when we want to move the aside?
+    
+
 
 ## embed icons 
 - https://fonts.google.com/icons
