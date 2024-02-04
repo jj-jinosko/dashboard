@@ -10,13 +10,39 @@
 <body>
     <div class="global-wrapper">
         <div class="wrapper">
-            <div class="header">
-                <img>
-                <h1>header</h1>
-            </div>
-            <div class="main">
+            <header class="primary-header">
+                <nav aria-label="Main Navigation" role="menubar" class="nav">
+                    <ul>
+                        <li class=""> <h1><img>[JJ]</h1></li>
+                        <li><a title="Home" href="#"><button>Home</button></li></a>
+                        <li>Resume</li>
+                        <li>Projects</li>
+                        <li>Code</li>
+                        <li>Macrophotography</li>
+                        <li>Music</li>
+                        <li>Outreach</li>
+                        <li><i class="material-icons">search</i></li>
+                        <li><i class="material-icons">notifications</i></li>
+                        <li>Call to action</li>
+                    </ul>
+                </nav>
+            </header>
+            <main class="main">
+
+                <div class="hero">
+                    Hero
+                    <h1>Jessica [JJ] Jinosko</h1>
+                    <p>hello! I'm JJ, an engineer and musician.</p>
+                    <p>I draw inspiration from nature, especially the tiny world of insects.</p>
+                </div>
             
-                <div class="aside">
+                <div class="project-header"><h2>Projects</h2><span>155 results</span>
+                    <img src="./noun-insects-5178572.svg" alt="stick insect" style="height: 5rem; width: 5rem;">
+                </div>
+
+                <div class="aside" aria-label="aside">
+                    maybe this will be project filter? list of all projects?
+                    <h1><i class="material-icons">filter_list</i>Filter</h1>
                     <h1><i class="material-icons">dashboard</i>Dashboard</h1>
                     <ul>
                         <li><i class="material-icons">home</i>Home</li>
@@ -30,17 +56,67 @@
                         <li><i class="material-icons">verified_user</i>Privacy</li>
                     </ul>
                 </div>
-                <div class="hero">
-                    Hero
-                </div>
+
                 <div class="cards">
-                    Cards
+                    <ul>
+                        <li class="card">
+                            <a href="">
+                                <div class="card-header">Code</div>
+                                <div class="card-title">Project Title</div>
+                                <div class="card-content">description of project</div>
+                                <div class="card-footer"></div>
+                            </a>
+                        </li>
+                        <li class="card">
+                            <a href="">
+                                <div class="card-header">Code</div>
+                                <div class="card-title"><h3>Obsidian Plugin: Dataview</h3></div>
+                                <div class="card-content">description of project</div>
+                                <div class="card-footer"></div>
+                            </a>
+                        </li>
+                        <li class="card">
+                            <a href="">
+                                <div class="card-header">Code</div>
+                                <div class="card-title"><h3>Sibelius Plugin: convert mod data to velocity</h3></div>
+                                <div class="card-content">description of project</div>
+                                <div class="card-footer"></div>
+                            </a>
+                        </li>
+                        <li class="card">
+                            <a href="">
+                                <div class="card-header">Code</div>
+                                <div class="card-title"><h3>Website: BK Woodworking</h3></div>
+                                <div class="card-content">description of project</div>
+                                <div class="card-footer"></div>
+                            </a>
+                        </li>
+                        <li class="card">
+                            <a href="">
+                                <div class="card-header">Code</div>
+                                <div class="card-title">Project Title</div>
+                                <div class="card-content">description of project</div>
+                                <div class="card-footer"></div>
+                            </a>
+                        </li>
+                        <li class="card">
+                            <a href="">
+                                <div class="card-header">Code</div>
+                                <div class="card-title">Project Title</div>
+                                <div class="card-content">description of project</div>
+                                <div class="card-footer"></div>
+                            </a>
+                        </li>
+                    </ul>
+
                 </div>
-            </div>
-            <div class="footer">
+            </main>
+            <footer class="footer">
             footer
-            </div>
+            </footer>
         </div>
     </div>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>

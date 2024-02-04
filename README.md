@@ -26,3 +26,6 @@ https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin
 
 ## accessibility
 - when removing list style, add attribute type[list] for screenreaders
+
+## fix
+- hover over cards is glitchy when hovering at the edge

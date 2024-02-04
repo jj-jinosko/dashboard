@@ -126,6 +126,8 @@ img {
 /* basic styling  */
 .global-wrapper {
     background-color: var(--color-background);
+    /* min-height: 100vh */
+    height: 200vh;
 }
 
 .wrapper {
@@ -133,21 +135,120 @@ img {
 
     max-width: 1440px;
     margin: auto;
+    padding-inline: 96px;
 }
 
-.wrapper > * {
+/* .wrapper > * {
     border: 2px solid black;
+} */
+
+/* header */
+header {
+    position: sticky;
+    top: 0;
 }
 
-.header {
-    
+nav > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.main {
+.primary-header {
+    position: sticky;
+      /* z-index: 1000; */
+      /* height: 100px; */
+    /* width: 100%;  */
+      background: rgba(34,34,34,0.25);
+      padding: 18px;
+      transition: all 0.2s ease-in-out;
+}
+
+.primary-header.sticking {
+    background-color: white;
+
+}
+  
+/* .active {
+    background-color: white;
+} */
+
+/* ------------main------------------ */
+main {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
 
-.footer {
+main > * {
+    border: 2px dotted black;
+    padding: 2rem;
+}
+
+.project-header {
+    grid-column: 1 / 13;
+
+    /* text-align: center; */
+}
+
+.aside {
+    grid-column: 1 / 4;
     
 }
+
+.aside > ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero {
+    grid-column: 1 / 13;
+
+    text-align: center;
+
+}
+
+.cards {
+    grid-column: 4 / 13;
+}
+
+.cards > ul {
+    list-style-type: none;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+
+}
+
+.card {
+    grid-column: span 4;
+
+    padding: 1rem;
+
+    border: 4px solid black;
+    border-radius: 4px;
+
+    box-shadow: -5px 5px black;
+
+    background-color: var(--color-white);
+
+}
+
+.card:hover {
+    position: relative;
+    top: -10px;
+    left: 10px;
+
+    /* box-shadow: black; */
+    box-shadow: -12px 12px 2px 1px rgba(0, 0, 255, .3);
+}
+
+/* footer */
+footer {
+    grid-column: 1 / 13;
+}
+
