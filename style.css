@@ -127,7 +127,7 @@ img {
 .global-wrapper {
     background-color: var(--color-background);
     /* min-height: 100vh */
-    height: 200vh;
+    min-height: 100vh;
 }
 
 .wrapper {
@@ -135,12 +135,13 @@ img {
 
     max-width: 1440px;
     margin: auto;
-    padding-inline: 96px;
+    padding-inline: 4em;
 }
 
-/* .wrapper > * {
+.wrapper > * {
     border: 2px solid black;
-} */
+    
+}
 
 /* header */
 header {
@@ -167,12 +168,12 @@ nav > ul {
 }
 
 /* ------------main------------------ */
-main {
+.main {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
 
-main > * {
+.main > * {
     /* border: 2px dotted black; */
     padding: 2rem;
 }
@@ -184,8 +185,10 @@ main > * {
 }
 
 .aside {
+    /* position: sticky; */
+
     grid-column: 1 / 4;
-    
+    min-width: 150px;
 }
 
 .aside > ul {
@@ -193,7 +196,7 @@ main > * {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .hero {
@@ -210,14 +213,14 @@ main > * {
 
     display: grid;
     
-    /* grid-template-columns: repeat(12, 1fr); */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(12, 1fr);
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
     gap: 2rem;
 }
 
 .card {
-    /* grid-column: span 4; */
-    /* max-width: 150px; */
+    grid-column: span 4;
+    height: 200px;
     padding: 1rem;
 
     border: 4px solid black;
@@ -242,16 +245,38 @@ footer {
 }
 
 
-/* @media only screen and (max-width: 900px) {
+@media (max-width: 1200px) {
     .global-wrapper {
         background-color: lightblue;
     }
 
     .wrapper {
-        max-width: 600px;
-        padding-inline: 1rem;
+        max-width: 900px;
+        padding-inline: 4em;
     }
-    main > * {
-        padding-inline: 4rem;
+    
+
+    .main {
+        grid-template-columns: 1fr;
     }
-  } */
+    
+    .main > * {
+        grid-column: 1 / 2;
+    }
+
+    .aside > ul {
+        flex-direction: row;
+    }
+
+    .cards > ul {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .card {
+        grid-column: auto;
+        background-color: black;
+    }
+
+}
+
+/* padding 32px (2em) each side @ smallest width */
