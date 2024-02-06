@@ -147,6 +147,8 @@ img {
 header {
     position: sticky;
     top: 0;
+
+    z-index: 3;
 }
 
 nav > ul {
@@ -174,14 +176,11 @@ nav > ul {
 }
 
 .main > * {
-    /* border: 2px dotted black; */
     padding: 2rem;
 }
 
 .project-header {
     grid-column: 1 / 13;
-
-    /* text-align: center; */
 }
 
 .aside {
@@ -206,6 +205,10 @@ nav > ul {
 
 .cards {
     grid-column: 4 / 13;
+}
+
+.photos {
+    grid-column: 1 / 13;
 }
 
 .cards > ul {
@@ -239,6 +242,18 @@ nav > ul {
     box-shadow: -12px 12px 2px 1px rgba(0, 0, 255, .3);
 }
 
+.card-container {
+    height: 100%;
+}
+
+.card-footer {
+    position: relative;
+    bottom: -100px;
+    background-color: red;
+}
+
+
+
 /* footer */
 footer {
     grid-column: 1 / 13;
@@ -246,9 +261,9 @@ footer {
 
 
 @media (max-width: 1200px) {
-    .global-wrapper {
+    /* .global-wrapper {
         background-color: lightblue;
-    }
+    } */
 
     .wrapper {
         max-width: 900px;
@@ -274,7 +289,6 @@ footer {
 
     .card {
         grid-column: auto;
-        background-color: black;
     }
 
 }

@@ -39,3 +39,6 @@ https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin
 
 ## fix
 - hover over cards is glitchy when hovering at the edge
+
+## make whole card clickable
+- https://christianheilmann.com/2020/11/26/back-to-basics-creating-a-clickable-card-interface-in-plain-html-css-and-javascript/
