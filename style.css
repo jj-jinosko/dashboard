@@ -235,12 +235,12 @@ nav > ul {
 }
 
 .card:hover {
-    position: relative;
-    top: -10px;
-    left: 10px;
+    transform: translateX(10px);
+    transform: translateY(-10px);
 
     box-shadow: -12px 12px 2px 1px rgba(0, 0, 255, .3);
 }
+
 
 .card-container {
     height: 100%;
