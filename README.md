@@ -38,10 +38,18 @@ https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin
 - when removing list style, add attribute type[list] for screenreaders
 
 
-# Lessons
+
+# TBD
 
 ## make whole card clickable
 - https://christianheilmann.com/2020/11/26/back-to-basics-creating-a-clickable-card-interface-in-plain-html-css-and-javascript/
+### fix card has padding and link is inside padding
+- tried to move padding to inside container, but messed up during hover
+- create a negative padding ? not sure
+
+
+# FIXED
+
 
 ## fix glitchy card hover on scroll
 - hover over cards is glitchy when hovering at the edge
