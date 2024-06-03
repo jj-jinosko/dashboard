@@ -5,6 +5,7 @@
     --color-white: white;
 
     --color-background: var(--color-beige);
+    --color-text: black;
 }
 
 
@@ -59,7 +60,7 @@ header {
 nav > ul {
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -139,6 +140,7 @@ nav > ul {
 
 }
 
+
 .card:hover {
     transform: translate(10px, -10px);
 
@@ -149,11 +151,23 @@ nav > ul {
     height: 100%;
 }
 
+.card-header {
+    color: transparent;
+}
+
 .card-footer {
     position: relative;
     bottom: -100px;
 }
 
+/* links styling */
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: var(--color-text);
+  }
 
 /* footer */
 footer {

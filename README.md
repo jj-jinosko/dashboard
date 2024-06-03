@@ -21,5 +21,4 @@ Mobile View:
 ## Features
 1. Responsive webpage with links to github pages
 2. Clickable cards
-
-## License
+3. Sticky header styling on scroll
