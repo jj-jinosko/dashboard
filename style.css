@@ -206,3 +206,10 @@ footer {
         grid-column: auto;
     }
 }
+
+
+@media (max-width: 450px){
+    .wrapper {
+      padding-inline: 0;
+    }
+  }
