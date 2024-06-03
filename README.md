@@ -1,56 +1,58 @@
-# dashboard
-Project Dashboard for the odin project
-https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard
+# Personal Project Dashboard
+Responsive webpage showcasing github projects
 
-## 
+Live Demo:  
+https://jj-jinosko.github.io/dashboard/
 
-## Skills
+PC View:  
+![Project Screenshot]()
+
+Mobile View:  
+![Project Screenshot]()
+
+### Skills
 - HTML
 - CSS
     - grid
     - flexbox
     - responsive layout
+- vanilla JavaScript
 
+### Inputs 
+* Project Design File: [dashboard-project.png]()
+* SVG Icon Library: [Material Design Icons](https://materialdesignicons.com/)
 
-## General steps
-1. HTML: generate HTML from content
-2. CSS: initialize default styling 
-3. CSS: layout containers, starting from largest to smallest
+## Features
+1. Responsive webpage with links to github pages
 
-- add sticky header transition w javascript
-- responsive design w minmax
-    - max size 1440
-    - med size : aside + 2col cards
-    - small size: aside shifts up + 1col cards
+## Future Features and Fixes
 
-    * could use grid-template-columns(auto-fit, minmax()),
-    but how will this behave when we want to move the aside?
-    
+### Macrophotography Page
+- showcase macrophotography and make large images available for download
 
+### Volunteer 'page' with links to organizations that I'm involved involved
+- Citizens Climate Lobby
+https://citizensclimatelobby.org/
+- Wild Ones
+- Huron River Watershed Council
 
-## embed icons 
-- https://fonts.google.com/icons
-- using codecademy site as a reference 
-![Alt text](image.png)
+What I'm up to:
+Chronilogical order of events
+Reference my obsidian (Environmental Volunteer Groups)
 
-
-## accessibility
-- when removing list style, add attribute type[list] for screenreaders
-
-
-
-# TBD
-
-## make whole card clickable
+### make whole card clickable
 - https://christianheilmann.com/2020/11/26/back-to-basics-creating-a-clickable-card-interface-in-plain-html-css-and-javascript/
+
 ### fix card has padding and link is inside padding
 - tried to move padding to inside container, but messed up during hover
 - create a negative padding ? not sure
 
 
+## accessibility
+- when removing list style, add attribute type[list] for screenreaders
 # FIXED
 
-
+## Bugs
 ## fix glitchy card hover on scroll
 - hover over cards is glitchy when hovering at the edge
 - (goes back and forth between hover/not hover state on edges during scroll)
