@@ -6,10 +6,10 @@ Live Demo:
 https://jj-jinosko.github.io/dashboard/
 
 PC View:  
-![Project Screenshot]()
+![Project Screenshot](/img/dashboard-web.png)
 
 Mobile View:  
-![Project Screenshot]()
+![Project Screenshot](/img/dashboard-mobile.png)
 
 ### Skills
 
