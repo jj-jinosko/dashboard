@@ -65,6 +65,14 @@ body {
   min-height: 100vh;
 }
 
+/* anchor to projects section margin */
+:target {
+  scroll-margin-top: 50px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
 /* basic styling  */
 
 .global-wrapper {
@@ -124,15 +132,9 @@ h1 {
 
 .main > * {
   padding: 2rem;
-  grid-column: 1 / 2;
-}
-
-.project-header {
-  grid-column: 1 / 13;
 }
 
 .hero {
-  grid-column: 1 / 13;
   text-align: center;
 }
 
@@ -141,11 +143,32 @@ h1 {
 }
 
 .cards {
-  grid-column: 1 / 13;
 }
 
-.photos {
-  grid-column: 1 / 13;
+.work,
+.education,
+.volunteer {
+  margin: 2em 0;
+}
+
+.work > h3,
+.education > h3,
+.volunteer > h3 {
+  padding-bottom: 1.2em;
+}
+.experience {
+  padding-bottom: 2em;
+}
+.role {
+  font-weight: bold;
+}
+.year {
+  color: rgb(52, 52, 52);
+  font-size: small;
+}
+
+.block {
+  padding: 0.5em 0 0 0;
 }
 
 .cards > ul {
@@ -157,8 +180,10 @@ h1 {
   gap: 2rem;
 }
 
-.card {
-  /* grid-column: span 4; */
+.card,
+.work,
+.education,
+.volunteer {
   grid-column: auto;
   min-height: 200px;
   padding: 1rem;

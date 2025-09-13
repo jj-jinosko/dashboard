@@ -27,7 +27,6 @@ Mobile View:
 
 ## todo
 
+- add about me section
 - add blog project: express
 - add booknotes project: api, db
-- ensure text doesn't overflow cards
-- add mobile mode card animation for scroll position (equivalent to hover)
