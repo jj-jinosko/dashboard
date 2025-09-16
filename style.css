@@ -124,7 +124,25 @@ h1 {
   margin-inline: 1em;
 }
 
-/* ------------main------------------ */
+/* -----------footer----------- */
+
+.footer {
+  min-height: 2em;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+}
+
+.footer-left > * {
+  margin-inline: 0.5em;
+}
+
+/* ------------main------------- */
 .main {
   display: grid;
   grid-template-columns: 1fr;
@@ -142,12 +160,15 @@ h1 {
   padding-top: 1em;
 }
 
-.cards {
+.experiences > h2,
+.projects > h2 {
+  padding-bottom: 0.25em;
 }
 
 .work,
 .education,
-.volunteer {
+.volunteer,
+.cards {
   margin: 2em 0;
 }
 
@@ -219,12 +240,17 @@ a {
 }
 
 a:link {
-  color: var(--color-text);
+  /* color: var(--color-text); */
+  color: #551a8b;
+}
+
+a:visited {
+  /* color: greenyellow; */
 }
 
 /* footer */
 footer {
-  grid-column: 1 / 13;
+  padding: 0.5em;
 }
 
 /* media-queries */
