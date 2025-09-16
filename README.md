@@ -27,6 +27,6 @@ Mobile View:
 
 ## todo
 
-- add about me section
 - add blog project: express
 - add booknotes project: api, db
+- add page and link to macrophotography
